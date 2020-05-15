@@ -367,7 +367,7 @@ function append_files_to_list(path, files) {
         p += "?a=view";
         c += " view";
       }
-      html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a href=https://down.boluo.link/php/mp4.php?url=https://gdr.wolfling.workers.dev${p}>
+      html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="https://down.boluo.link/php/mp4.php?url=https://gdr.wolfling.workers.dev${p}" class="${c}">
 	          <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate" title="${item.name}">
 	          <i class="mdui-icon material-icons">insert_drive_file</i>
 	            ${item.name}
